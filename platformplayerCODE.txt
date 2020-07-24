@@ -1,0 +1,17 @@
+//detecting collision with platform and parenting transform of the player to the platform
+void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.name.Equals("MovingPlatform"))
+            this.transform.parent = coll.transform;
+
+    }
+
+//detects when player not in contact with the platform unparents transform of player and transform of platform
+    void OnCollisionExit2D(Collision2D coll)
+    {
+        if (coll.gameObject.name.Equals("MovingPlatform"))
+            this.transform.parent = null;
+    }
+
+*add anywhere to playercontroller script*
+
