@@ -5,7 +5,6 @@ using UnityEngine;
 public class platformmovement : MonoBehaviour
 {
     //all variables used
-    float directiononX;
     public float speed = 3f;
     bool moveR = true;
     //max distance the object can move variables
